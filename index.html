@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#18251B">
+  <title>Madarasi Restaurant | Chennai, Tamil Nadu</title>
+  <meta name="description" content="A table at Madarasi Restaurant, Sathyamoorthy Nagar, Chennai. Explore the supplied menu, find us on Manali Express Road, or send an enquiry on WhatsApp.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Madarasi Restaurant — Chennai">
+  <meta property="og:description" content="Tradition Served With Love. Find Madarasi Restaurant on Manali Express Road, Chennai.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Madarasi Restaurant — Chennai">
+  <meta name="twitter:description" content="Tradition Served With Love. Find us in Sathyamoorthy Nagar, Chennai.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2247%22 fill=%22%2318251B%22 stroke=%22%23D8AF62%22 stroke-width=%223%22/%3E%3Ctext x=%2250%22 y=%2266%22 text-anchor=%22middle%22 font-size=%2257%22 font-family=%22Georgia%2Cserif%22 fill=%22%23D8AF62%22%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { forest: '#18251B', deep: '#101811', gold: '#D8AF62', ivory: '#F7F1E5', terracotta: '#A84F32', sage: '#A9B3A3' },
+          fontFamily: { sans: ['DM Sans', 'sans-serif'], display: ['Cormorant Garamond', 'serif'], tamil: ['Noto Sans Tamil', 'sans-serif'] }
+        }
+      }
+    };
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Madarasi Restaurant",
+    "telephone": "+918056167697",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "8A, Manali Express Road, Sathyamoorthy Nagar",
+      "addressLocality": "Chennai",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "600019",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --forest: #18251B; --deep: #101811; --gold: #D8AF62; --ivory: #F7F1E5;
+      --terracotta: #A84F32; --sage: #A9B3A3; --ink: #202920; --muted: #667065;
+      --serif: "Cormorant Garamond", Georgia, serif; --sans: "DM Sans", sans-serif;
+      --tamil: "Noto Sans Tamil", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 94px; }
+    body { margin: 0; background: var(--ivory); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+    body.menu-open { overflow: hidden; }
+    ::selection { color: var(--deep); background: var(--gold); }
+    a { color: inherit; }
+    button, input, select, textarea { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    :focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+    .serif { font-family: var(--serif); font-weight: 500; }
+    .eyebrow { display: inline-flex; gap: 12px; align-items: center; color: var(--terracotta); font-size: .66rem; font-weight: 700; letter-spacing: .19em; text-transform: uppercase; }
+    .eyebrow::before { content: ""; width: 29px; height: 1px; background: currentColor; }
+    .wrap { width: min(1210px, calc(100% - 64px)); margin-inline: auto; }
+    .topline { background: var(--deep); color: #e8dfcc; min-height: 34px; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 6px 18px; font-size: .66rem; letter-spacing: .11em; text-align: center; }
+    .topline span { color: var(--gold); }
+    .site-header { position: sticky; z-index: 30; top: 0; background: rgba(247,241,229,.96); border-bottom: 1px solid rgba(24,37,27,.11); backdrop-filter: blur(14px); }
+    .nav-shell { min-height: 82px; display: flex; justify-content: space-between; align-items: center; gap: 28px; }
+    .brand { display: flex; align-items: center; gap: 12px; color: var(--forest); text-decoration: none; flex-shrink: 0; }
+    .brand-mark { display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid var(--gold); border-radius: 50%; color: var(--gold); font-family: var(--serif); font-size: 1.55rem; line-height: 1; }
+    .brand-copy { display: grid; line-height: 1; }
+    .brand-copy strong { font: 600 1.27rem var(--serif); letter-spacing: .01em; }
+    .brand-copy small { margin-top: 5px; color: #6a705f; font-size: .51rem; letter-spacing: .19em; text-transform: uppercase; }
+    .nav-links { display: flex; align-items: center; gap: clamp(18px, 3vw, 41px); }
+    .nav-links a { position: relative; padding-block: 8px; color: #354036; text-decoration: none; font-size: .72rem; font-weight: 600; transition: color .2s; }
+    .nav-links a:not(.nav-cta)::after { position: absolute; right: 0; bottom: 3px; left: 0; height: 1px; content: ""; background: var(--terracotta); transform: scaleX(0); transform-origin: left; transition: transform .25s; }
+    .nav-links a:hover { color: var(--terracotta); }
+    .nav-links a:hover::after { transform: scaleX(1); }
+    .nav-links .nav-cta { border: 1px solid var(--forest); padding: 12px 17px; color: var(--ivory); background: var(--forest); transition: background .2s, color .2s; }
+    .nav-links .nav-cta:hover { color: var(--forest); background: transparent; }
+    .menu-toggle { display: none; background: none; border: 0; color: var(--forest); padding: 10px; cursor: pointer; }
+    .hero { min-height: min(740px, calc(100svh - 116px)); position: relative; display: flex; align-items: center; isolation: isolate; overflow: hidden; color: var(--ivory); background: var(--deep); }
+    .hero::before { position: absolute; z-index: -2; inset: 0; content: ""; background: radial-gradient(circle at 78% 50%, transparent 0 108px, rgba(216,175,98,.22) 109px 110px, transparent 111px 148px, rgba(216,175,98,.12) 149px 150px, transparent 151px 188px, rgba(216,175,98,.08) 189px 190px, transparent 191px), radial-gradient(ellipse at 78% 50%, rgba(216,175,98,.08), transparent 38%), linear-gradient(135deg, #101811 0%, #18251B 60%, #223226 100%); }
+    .hero::after { position: absolute; z-index: -1; inset: 18px; content: ""; border: 1px solid rgba(216,175,98,.3); pointer-events: none; }
+    .hero-content { width: min(1210px, calc(100% - 100px)); margin: 0 auto; padding: 90px 0 104px; position: relative; }
+    .hero-kicker { display: flex; align-items: center; gap: 12px; color: var(--gold); font-size: .68rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; }
+    .hero-kicker::before { content: ""; width: 38px; height: 1px; background: var(--gold); }
+    .hero h1 { max-width: 700px; margin: 24px 0 20px; font: 500 clamp(4.2rem, 9.2vw, 8.15rem)/.82 var(--serif); letter-spacing: -.045em; }
+    .hero h1 em { color: var(--gold); font-weight: 400; }
+    .hero-copy { max-width: 440px; margin: 27px 0 31px; color: rgba(247,241,229,.82); font-size: .95rem; line-height: 1.8; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .button { min-height: 49px; display: inline-flex; align-items: center; justify-content: center; gap: 11px; padding: 0 21px; border: 1px solid transparent; text-decoration: none; font-size: .73rem; font-weight: 700; letter-spacing: .06em; transition: transform .2s, background .2s, color .2s, border-color .2s; cursor: pointer; }
+    .button:hover { transform: translateY(-2px); }
+    .button-gold { color: var(--deep); background: var(--gold); }
+    .button-gold:hover { background: #e5c784; }
+    .button-outline { border-color: rgba(247,241,229,.62); color: var(--ivory); background: transparent; }
+    .button-outline:hover { border-color: var(--ivory); background: rgba(247,241,229,.12); }
+    .hero-side-note { position: absolute; right: 10px; bottom: 82px; writing-mode: vertical-rl; color: rgba(247,241,229,.75); font-size: .57rem; letter-spacing: .2em; text-transform: uppercase; }
+    .hero-coordinates { position: absolute; right: 0; bottom: 0; display: flex; align-items: center; gap: 10px; color: rgba(247,241,229,.68); font-size: .63rem; letter-spacing: .12em; text-transform: uppercase; }
+    .hero-coordinates::before { width: 24px; height: 1px; content: ""; background: var(--gold); }
+    .marquee { overflow: hidden; background: var(--gold); color: var(--deep); }
+    .marquee-track { width: max-content; display: flex; align-items: center; gap: 30px; padding: 13px 0; animation: drift 42s linear infinite; font: 500 1.25rem var(--serif); }
+    .marquee-track span { display: flex; align-items: center; gap: 30px; white-space: nowrap; }
+    .marquee-track i { color: var(--terracotta); font-style: normal; font-size: .8rem; }
+    @keyframes drift { to { transform: translateX(-50%); } }
+    .intro { padding: 124px 0 118px; }
+    .intro-grid { display: grid; grid-template-columns: 1.03fr .97fr; align-items: center; gap: clamp(55px, 10vw, 145px); }
+    .intro-copy { padding: 6px 0; }
+    .intro h2, .section-heading h2, .contact-copy h2 { margin: 19px 0 20px; color: var(--forest); font: 500 clamp(3.1rem, 6vw, 5.45rem)/.9 var(--serif); letter-spacing: -.035em; }
+    .intro h2 em, .section-heading h2 em { color: var(--terracotta); font-weight: 400; }
+    .intro-copy p { max-width: 460px; color: #596257; font-size: .9rem; line-height: 1.9; }
+    .intro-copy .small-line { margin: 26px 0 0; color: var(--forest); font-family: var(--tamil); font-size: .82rem; }
+    .text-link { display: inline-flex; align-items: center; gap: 11px; margin-top: 25px; color: var(--terracotta); font-size: .73rem; font-weight: 700; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
+    .text-link svg { transition: transform .2s; }
+    .text-link:hover svg { transform: translateX(4px); }
+    .intro-visual { position: relative; min-height: 440px; display: grid; place-items: center; overflow: hidden; color: var(--ivory); background: var(--forest); }
+    .intro-visual::before, .intro-visual::after { position: absolute; width: 330px; height: 330px; border: 1px solid rgba(216,175,98,.35); border-radius: 50%; content: ""; }
+    .intro-visual::after { width: 270px; height: 270px; border-color: rgba(216,175,98,.2); box-shadow: 0 0 0 28px rgba(216,175,98,.035), 0 0 0 58px rgba(216,175,98,.025); }
+    .story-seal { position: relative; z-index: 1; width: 205px; height: 205px; display: grid; place-items: center; border: 1px solid var(--gold); border-radius: 50%; text-align: center; }
+    .story-seal strong { display: block; color: var(--gold); font: 500 5.2rem/.85 var(--serif); }
+    .story-seal span { display: block; margin-top: 10px; color: var(--ivory); font-size: .58rem; letter-spacing: .19em; text-transform: uppercase; }
+    .values { display: grid; grid-template-columns: repeat(3,1fr); border-top: 1px solid #d8d2c4; margin-top: 45px; padding-top: 19px; gap: 18px; }
+    .value strong { display: block; color: var(--terracotta); font: 600 1.7rem var(--serif); }
+    .value span { display: block; margin-top: 3px; color: #697166; font-size: .65rem; line-height: 1.5; }
+    .menu-section { position: relative; padding: 110px 0 120px; color: var(--ivory); background: var(--forest); overflow: hidden; }
+    .menu-section::before { position: absolute; top: 0; right: -210px; width: 580px; height: 580px; border: 1px solid rgba(216,175,98,.11); border-radius: 50%; content: ""; box-shadow: 0 0 0 48px rgba(216,175,98,.025), 0 0 0 96px rgba(216,175,98,.025); pointer-events: none; }
+    .menu-section .eyebrow { color: var(--gold); }
+    .menu-head { position: relative; display: flex; align-items: end; justify-content: space-between; gap: 40px; }
+    .section-heading h2 { color: var(--ivory); }
+    .section-heading h2 em { color: var(--gold); }
+    .menu-intro { max-width: 325px; margin: 0 0 25px; color: #c0c8bb; font-size: .83rem; line-height: 1.8; }
+    .menu-tools { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; margin: 20px 0 34px; border-bottom: 1px solid rgba(247,241,229,.19); padding-bottom: 16px; }
+    .filters { display: flex; flex-wrap: wrap; gap: 8px; }
+    .filter-btn { border: 1px solid rgba(247,241,229,.26); padding: 10px 15px; color: #e9e2d4; background: transparent; font-size: .68rem; font-weight: 600; cursor: pointer; transition: all .18s; }
+    .filter-btn:hover, .filter-btn[aria-pressed="true"] { border-color: var(--gold); color: var(--deep); background: var(--gold); }
+    .price-note { margin: 0; color: #bac2b8; font-size: .66rem; }
+    .menu-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 34px 54px; }
+    .menu-category-block { min-width: 0; border-top: 1px solid rgba(216,175,98,.56); padding-top: 16px; animation: menu-in .32s ease both; }
+    .menu-category-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 8px; }
+    .menu-category-heading h3 { margin: 0; color: var(--gold); font: 500 1.8rem/1.1 var(--serif); }
+    .menu-category-heading span { color: #aeb7aa; font-size: .57rem; letter-spacing: .13em; text-transform: uppercase; }
+    .menu-list { margin: 0; padding: 0; list-style: none; }
+    .menu-row { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: 12px; border-bottom: 1px solid rgba(247,241,229,.12); padding: 13px 0; }
+    .menu-row-main { min-width: 0; }
+    .menu-row h4 { margin: 0; color: var(--ivory); font: 500 1.15rem/1.2 var(--serif); }
+    .menu-row-detail { margin: 5px 0 0; color: #bfc7bb; font-size: .68rem; line-height: 1.5; }
+    .menu-row-side { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+    .menu-price { color: var(--gold); font-size: .78rem; font-weight: 700; white-space: nowrap; }
+    .menu-ask { border: 0; padding: 0; color: #c4cbbf; background: transparent; font-size: .57rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; cursor: pointer; }
+    .menu-ask:hover { color: var(--gold); }
+    .empty-state { grid-column: 1/-1; padding: 30px 0; color: #c0c8bb; font-size: .82rem; }
+    @keyframes menu-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    .contact-section { color: var(--ivory); background: var(--deep); }
+    .contact-top { padding: 105px 0 84px; }
+    .contact-grid { display: grid; grid-template-columns: .88fr 1.12fr; gap: clamp(42px, 8vw, 110px); }
+    .contact-copy .eyebrow { color: var(--gold); }
+    .contact-copy h2 { color: var(--ivory); font-size: clamp(3.2rem, 6vw, 5.4rem); }
+    .contact-copy h2 em { color: var(--gold); font-weight: 400; }
+    .contact-copy > p { max-width: 390px; color: #c2c9be; font-size: .83rem; line-height: 1.8; }
+    .contact-list { display: grid; gap: 22px; margin-top: 37px; }
+    .contact-row { display: grid; grid-template-columns: 34px 1fr; gap: 13px; align-items: start; }
+    .contact-icon { width: 32px; height: 32px; display: grid; place-items: center; border: 1px solid rgba(216,175,98,.5); color: var(--gold); }
+    .contact-row small { display: block; margin: 1px 0 5px; color: #a9b3a3; font-size: .57rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    .contact-row a, .contact-row address, .contact-row span { color: var(--ivory); font-size: .78rem; line-height: 1.65; text-decoration: none; font-style: normal; }
+    .contact-row a:hover { color: var(--gold); }
+    .contact-form { padding: clamp(27px, 4vw, 49px); color: var(--ink); background: var(--ivory); }
+    .form-head { display: flex; justify-content: space-between; align-items: start; gap: 15px; margin-bottom: 26px; }
+    .form-head h3 { margin: 0; color: var(--forest); font: 500 2.35rem/1 var(--serif); }
+    .form-head p { margin: 8px 0 0; color: #697166; font-size: .7rem; line-height: 1.6; }
+    .wa-stamp { width: 39px; height: 39px; display: grid; flex-shrink: 0; place-items: center; border: 1px solid #93a18d; border-radius: 50%; color: var(--forest); }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 14px; }
+    .field { display: grid; gap: 7px; }
+    .field.full { grid-column: 1/-1; }
+    .field label { color: #3e493e; font-size: .64rem; font-weight: 700; letter-spacing: .04em; }
+    .field label .required { color: var(--terracotta); }
+    .field input, .field select, .field textarea { width: 100%; min-height: 43px; border: 1px solid #d3d0c4; border-radius: 0; padding: 10px 11px; color: var(--ink); background: #fbf8f1; font-size: .75rem; }
+    .field textarea { min-height: 90px; resize: vertical; }
+    .field input:focus, .field select:focus, .field textarea:focus { outline: 2px solid var(--gold); outline-offset: 1px; border-color: var(--gold); }
+    .field [aria-invalid="true"] { border-color: var(--terracotta); }
+    .field-error { min-height: 0; color: #9b3827; font-size: .63rem; }
+    .field-error:empty { display: none; }
+    .conditional-fields { display: contents; }
+    .form-note { margin: 13px 0 0; color: #697166; font-size: .63rem; line-height: 1.6; }
+    .form-submit { width: 100%; margin-top: 19px; border: 0; color: var(--ivory); background: var(--forest); }
+    .form-submit:hover { background: var(--terracotta); }
+    .form-submit:disabled { opacity: .55; cursor: not-allowed; }
+    .form-status { min-height: 18px; margin: 10px 0 0; color: var(--forest); font-size: .72rem; line-height: 1.5; }
+    .map-band { height: 350px; position: relative; overflow: hidden; background: #ded8c9; }
+    .map-frame { width: 100%; height: 100%; display: block; border: 0; filter: grayscale(.72) sepia(.17) contrast(.93); }
+    .map-card { position: absolute; right: max(32px, calc((100vw - 1210px) / 2)); bottom: 26px; width: min(330px, calc(100% - 48px)); padding: 22px; color: var(--ivory); background: var(--forest); box-shadow: 0 13px 35px rgba(16,24,17,.2); }
+    .map-card small { color: var(--gold); font-size: .59rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+    .map-card p { margin: 9px 0 15px; font: 500 1.4rem/1.2 var(--serif); }
+    .map-card a { display: inline-flex; align-items: center; gap: 8px; color: var(--gold); font-size: .68rem; font-weight: 700; text-decoration: none; }
+    .site-footer { padding: 42px 0 22px; color: var(--ivory); background: #0b120d; }
+    .footer-main { display: flex; justify-content: space-between; gap: 35px; align-items: start; }
+    .footer-brand { color: var(--ivory); }
+    .footer-brand .brand-copy small { color: #a9b3a3; }
+    .footer-line { max-width: 360px; margin: 15px 0 0; color: #aab2a7; font-size: .72rem; line-height: 1.7; }
+    .footer-nav { display: flex; flex-wrap: wrap; justify-content: end; gap: 15px 26px; }
+    .footer-nav a { color: #d0d4ca; font-size: .68rem; text-decoration: none; }
+    .footer-nav a:hover { color: var(--gold); }
+    .footer-bottom { display: flex; justify-content: space-between; gap: 15px; margin-top: 35px; border-top: 1px solid rgba(247,241,229,.15); padding-top: 17px; color: #98a197; font-size: .61rem; }
+    .footer-bottom a { color: #d8bd81; text-decoration: none; }
+    .float-wa { position: fixed; z-index: 25; right: 22px; bottom: 22px; display: inline-flex; align-items: center; gap: 10px; min-height: 49px; padding: 0 18px; border: 1px solid rgba(247,241,229,.5); color: var(--deep); background: var(--gold); box-shadow: 0 8px 24px rgba(16,24,17,.22); text-decoration: none; font-size: .7rem; font-weight: 700; transition: transform .2s, background .2s; }
+    .float-wa:hover { transform: translateY(-3px); background: #e7c77f; }
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    @media (min-width: 1440px) { .hero-content { width: min(1210px, calc(100% - 120px)); } }
+    @media (max-width: 900px) {
+      .wrap { width: min(100% - 44px, 740px); }
+      .nav-shell { min-height: 74px; }
+      .menu-toggle { display: inline-flex; align-items: center; justify-content: center; }
+      .nav-links { position: fixed; top: 108px; right: 0; left: 0; display: flex; flex-direction: column; align-items: stretch; gap: 0; padding: 16px 24px 26px; border-bottom: 1px solid #d8d2c4; background: var(--ivory); transform: translateY(-130%); opacity: 0; visibility: hidden; transition: transform .28s, opacity .28s, visibility .28s; }
+      .nav-links.open { transform: translateY(0); opacity: 1; visibility: visible; }
+      .nav-links a { padding: 15px 5px; border-bottom: 1px solid rgba(24,37,27,.1); }
+      .nav-links .nav-cta { margin-top: 14px; padding: 14px 16px; text-align: center; }
+      .hero { min-height: 640px; }
+      .hero-content { width: calc(100% - 76px); }
+      .intro-grid { gap: 55px; }
+      .intro-visual { min-height: 420px; }
+      .intro-visual { min-height: 380px; }
+      .menu-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+      .contact-grid { grid-template-columns: 1fr 1.08fr; gap: 35px; }
+    }
+    @media (max-width: 650px) {
+      html { scroll-padding-top: 72px; }
+      .wrap { width: calc(100% - 40px); }
+      .topline { min-height: 31px; font-size: .56rem; letter-spacing: .07em; }
+      .nav-shell { min-height: 68px; }
+      .brand-mark { width: 37px; height: 37px; }
+      .brand-copy strong { font-size: 1.14rem; }
+      .nav-links { top: 99px; }
+      .hero { min-height: 680px; align-items: end; }
+      .hero::before { background: radial-gradient(circle at 84% 50%, transparent 0 76px, rgba(216,175,98,.22) 77px 78px, transparent 79px 108px, rgba(216,175,98,.11) 109px 110px, transparent 111px), radial-gradient(ellipse at 80% 50%, rgba(216,175,98,.07), transparent 50%), linear-gradient(145deg, #101811 0%, #18251B 70%, #223226 100%); }
+      .hero::after { inset: 10px; }
+      .hero-content { width: calc(100% - 48px); padding: 80px 0 73px; }
+      .hero h1 { max-width: 460px; margin-top: 20px; font-size: clamp(4rem, 18vw, 6.5rem); }
+      .hero-copy { max-width: 390px; font-size: .83rem; }
+      .hero-side-note { display: none; }
+      .hero-coordinates { bottom: -42px; left: 0; right: auto; font-size: .54rem; }
+      .hero-actions .button { min-height: 45px; padding-inline: 15px; font-size: .66rem; }
+      .intro { padding: 83px 0 82px; }
+      .intro-grid { grid-template-columns: 1fr; gap: 42px; }
+      .intro h2, .section-heading h2, .contact-copy h2 { font-size: clamp(3.5rem, 15vw, 5rem); }
+      .intro-copy p { font-size: .83rem; }
+      .intro-visual { min-height: 310px; margin: 0; }
+      .intro-visual::before { width: 255px; height: 255px; }
+      .intro-visual::after { width: 207px; height: 207px; }
+      .story-seal { width: 160px; height: 160px; }
+      .story-seal strong { font-size: 4.2rem; }
+      .values { margin-top: 31px; gap: 10px; }
+      .value strong { font-size: 1.45rem; }
+      .value span { font-size: .59rem; }
+      .menu-section { padding: 82px 0 88px; }
+      .menu-head { display: block; }
+      .menu-intro { margin-top: -3px; }
+      .menu-tools { align-items: flex-start; margin-top: 10px; }
+      .filters { gap: 6px; }
+      .filter-btn { padding: 9px 11px; font-size: .63rem; }
+      .menu-grid { grid-template-columns: 1fr; gap: 14px; }
+      .menu-grid { grid-template-columns: 1fr; gap: 28px; }
+      .menu-category-heading h3 { font-size: 1.7rem; }
+      .menu-row { gap: 8px; padding: 12px 0; }
+      .menu-row h4 { font-size: 1.08rem; }
+      .menu-ask { font-size: .54rem; }
+      .contact-top { padding: 81px 0 67px; }
+      .contact-grid { grid-template-columns: 1fr; gap: 38px; }
+      .contact-copy h2 { margin-bottom: 14px; }
+      .contact-list { gap: 17px; margin-top: 26px; }
+      .contact-form { padding: 25px 20px; }
+      .form-head h3 { font-size: 2.1rem; }
+      .form-grid { gap: 13px 10px; }
+      .field input, .field select { min-height: 45px; }
+      .map-band { height: 390px; }
+      .map-card { right: 15px; bottom: 15px; }
+      .footer-main { flex-direction: column; }
+      .footer-nav { justify-content: start; }
+      .footer-bottom { flex-direction: column; gap: 8px; }
+      .float-wa { right: 12px; bottom: 12px; min-height: 45px; padding: 0 14px; font-size: .64rem; }
+    }
+    @media (max-width: 380px) {
+      .hero h1 { font-size: 3.8rem; }
+      .hero-actions { gap: 8px; }
+      .hero-actions .button { padding-inline: 12px; }
+      .menu-category-heading span { font-size: .5rem; }
+      .form-grid { grid-template-columns: 1fr; }
+      .field.full { grid-column: auto; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topline"><span>CHENNAI</span> · A table for the moments that matter · Listed as closing at midnight</div>
+  <header class="site-header">
+    <div class="wrap nav-shell">
+      <a class="brand" href="#home" aria-label="Madarasi Restaurant home">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span class="brand-copy"><strong>Madarasi Restaurant</strong><small>Chennai · Tamil Nadu</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primaryNav">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6"/></svg>
+      </button>
+      <nav class="nav-links" id="primaryNav" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#story">Our Story</a><a href="#menu">Menu</a><a href="#visit">Contact</a>
+        <a class="nav-cta whatsapp-link" id="navWhatsApp" href="#enquiry" target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <div class="hero-kicker">A Chennai gathering place</div>
+        <h1 id="hero-title">Tradition<br>Served <em>With</em><br>Love.</h1>
+        <p class="hero-copy">Come together over familiar flavours, generous plates and the simple pleasure of sharing a meal. Your table is waiting in Sathyamoorthy Nagar.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#menu">Explore the menu <span aria-hidden="true">↓</span></a>
+          <a class="button button-outline" href="#visit">Make your way here <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-coordinates">8A · Manali Express Road · Chennai</div>
+        <div class="hero-side-note">A welcome, from our table to yours</div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div class="marquee-track">
+      <span>Gather around <i>✳</i> Chennai, Tamil Nadu <i>✳</i> Take your time <i>✳</i> Madarasi Restaurant <i>✳</i></span>
+      <span>Gather around <i>✳</i> Chennai, Tamil Nadu <i>✳</i> Take your time <i>✳</i> Madarasi Restaurant <i>✳</i></span>
+    </div></div>
+
+    <section class="intro" id="story">
+      <div class="wrap intro-grid">
+        <div class="intro-copy reveal">
+          <span class="eyebrow">A place at the table</span>
+          <h2>Good food.<br><em>Good company.</em></h2>
+          <p>Some meals are more than what’s on the plate. They’re a reason to pause, to catch up, to make room for one more. At Madarasi Restaurant, we welcome you to make that time your own.</p>
+          <p>Find us along Manali Express Road in Sathyamoorthy Nagar, Chennai. Whether you’re stopping by or gathering a group, we’d love to hear from you.</p>
+          <p class="small-line" lang="ta">வாருங்கள், ஒன்றாக உணவருந்துவோம்.</p>
+          <a class="text-link" href="#visit">Find your way to us
+            <svg width="18" height="12" viewBox="0 0 18 12" fill="none" aria-hidden="true"><path d="M1 6h15m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.3"/></svg>
+          </a>
+          <div class="values">
+            <div class="value"><strong>01</strong><span>Traditional recipes<br>made to share</span></div>
+            <div class="value"><strong>02</strong><span>Fresh ingredients<br>in every meal</span></div>
+            <div class="value"><strong>03</strong><span>Warm hospitality<br>at your table</span></div>
+          </div>
+        </div>
+        <div class="intro-visual reveal" aria-label="Madarasi Restaurant heritage-inspired monogram">
+          <div class="story-seal" aria-hidden="true"><div><strong>M</strong><span>Madarasi · Chennai</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="wrap">
+        <div class="menu-head reveal">
+          <div class="section-heading"><span class="eyebrow">Madarasi Restaurant</span><h2 id="menu-title">The <em>menu.</em></h2></div>
+          <p class="menu-intro">A clear look at the menu shared with us. Select a category to browse, or ask about any item directly on WhatsApp.</p>
+        </div>
+        <div class="menu-tools">
+          <div class="filters" role="group" aria-label="Filter menu by category">
+            <button class="filter-btn" type="button" data-filter="All" aria-pressed="true">All</button>
+            <button class="filter-btn" type="button" data-filter="Biryani" aria-pressed="false">Biryani</button>
+            <button class="filter-btn" type="button" data-filter="Madarasi Special" aria-pressed="false">Madarasi Special</button>
+            <button class="filter-btn" type="button" data-filter="Combos" aria-pressed="false">Combos</button>
+            <button class="filter-btn" type="button" data-filter="Other menu items" aria-pressed="false">Other menu items</button>
+          </div>
+          <p class="price-note">Prices shown as supplied; they may change.</p>
+        </div>
+        <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="visit">
+      <div class="contact-top">
+        <div class="wrap contact-grid">
+          <div class="contact-copy reveal">
+            <span class="eyebrow">Come find us</span>
+            <h2>See you<br><em>in Chennai.</em></h2>
+            <p>We’re on Manali Express Road, in Sathyamoorthy Nagar. Call us, start a WhatsApp conversation, or get directions for your visit.</p>
+            <div class="contact-list">
+              <div class="contact-row">
+                <span class="contact-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg></span>
+                <div><small>Address</small><address>8A, Manali Express Road,<br>Sathyamoorthy Nagar, Chennai,<br>Tamil Nadu 600019</address></div>
+              </div>
+              <div class="contact-row">
+                <span class="contact-icon" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M6.6 3h3l1.4 4-2 1.7a15 15 0 0 0 6.3 6.3l1.7-2 4 1.4v3c0 1.1-.9 2-2 2C10 19.4 4.6 14 4.6 7c0-1.1.9-2 2-2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+                <div><small>Call us</small><a href="tel:+918056167697">+91 80561 67697</a></div>
+              </div>
+              <div class="contact-row">
+                <span class="contact-icon" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+                <div><small>Hours note</small><span>Listed as closing at 12:00 AM</span></div>
+              </div>
+              <div class="contact-row">
+                <span class="contact-icon" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M20 11.5a8.2 8.2 0 0 1-12.1 7.2L4 20l1.3-3.7A8.2 8.2 0 1 1 20 11.5Z" stroke="currentColor" stroke-width="1.5"/><path d="M9 8.7c.3-.5.6-.5.9-.5l.6.1.8 1.8c.1.3 0 .5-.2.7l-.5.6c.6 1.1 1.4 1.8 2.5 2.3l.6-.7c.2-.2.4-.3.7-.2l1.7.8c.3.1.4.4.3.7-.2.9-.9 1.6-1.9 1.6-2.4-.1-5.8-3.1-6.3-5.4-.2-.8.2-1.4.8-1.8Z" fill="currentColor"/></svg></span>
+                <div><small>WhatsApp</small><a class="whatsapp-link" id="contactWhatsApp" href="#enquiry" target="_blank" rel="noopener noreferrer">Start a conversation</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form reveal" id="enquiry">
+            <div class="form-head">
+              <div><h3>Let’s plan a visit.</h3><p>Share the details and continue in WhatsApp to enquire.</p></div>
+              <span class="wa-stamp" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M20 11.5a8.2 8.2 0 0 1-12.1 7.2L4 20l1.3-3.7A8.2 8.2 0 1 1 20 11.5Z" stroke="currentColor" stroke-width="1.5"/><path d="M9 8.7c.3-.5.6-.5.9-.5l.6.1.8 1.8c.1.3 0 .5-.2.7l-.5.6c.6 1.1 1.4 1.8 2.5 2.3l.6-.7c.2-.2.4-.3.7-.2l1.7.8c.3.1.4.4.3.7-.2.9-.9 1.6-1.9 1.6-2.4-.1-5.8-3.1-6.3-5.4-.2-.8.2-1.4.8-1.8Z" fill="currentColor"/></svg></span>
+            </div>
+            <form id="enquiryForm" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="guestName">Your name <span class="required">*</span></label>
+                  <input id="guestName" name="name" autocomplete="name" required maxlength="80" aria-describedby="nameError">
+                  <span class="field-error" id="nameError"></span>
+                </div>
+                <div class="field">
+                  <label for="guestPhone">Phone number <span class="required">*</span></label>
+                  <input id="guestPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+91 98765 43210" required maxlength="22" aria-describedby="phoneError">
+                  <span class="field-error" id="phoneError"></span>
+                </div>
+                <div class="field">
+                  <label for="enquiryType">Enquiry about <span class="required">*</span></label>
+                  <select id="enquiryType" name="enquiryType" required aria-describedby="typeError">
+                    <option value="">Choose one</option><option value="Table / group">Table / group</option><option value="Menu question">Menu question</option><option value="Other enquiry">Other enquiry</option>
+                  </select>
+                  <span class="field-error" id="typeError"></span>
+                </div>
+                <div class="field">
+                  <label for="menuCategory">Menu category <span style="font-weight:400">(optional)</span></label>
+                  <select id="menuCategory" name="menuCategory"><option value="">Choose a category</option></select>
+                </div>
+                <div class="field">
+                  <label for="dishSelection">Selected dish <span style="font-weight:400">(optional)</span></label>
+                  <select id="dishSelection" name="dishSelection" disabled><option value="">Choose a category first</option></select>
+                </div>
+                <div class="conditional-fields" id="tableFields">
+                  <div class="field"><label for="preferredDate">Preferred date</label><input id="preferredDate" name="preferredDate" type="date"></div>
+                  <div class="field"><label for="guestCount">Guests</label><input id="guestCount" name="guestCount" type="number" min="1" max="300" inputmode="numeric" placeholder="e.g. 6" aria-describedby="guestError"><span class="field-error" id="guestError"></span></div>
+                </div>
+                <div class="field full">
+                  <label for="guestMessage">Anything else? <span style="font-weight:400">(optional)</span></label>
+                  <textarea id="guestMessage" name="message" maxlength="700" placeholder="Share a little about your plans…"></textarea>
+                </div>
+              </div>
+              <p class="form-note">This opens WhatsApp with your message ready to send. Nothing is submitted to or stored on this website.</p>
+              <button class="button form-submit" type="submit">Continue to WhatsApp <span aria-hidden="true">↗</span></button>
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="map-band" aria-label="Map showing Madarasi Restaurant's location">
+        <iframe class="map-frame" title="Map to Madarasi Restaurant, Manali Express Road, Chennai" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=8A%2C%20Manali%20Express%20Road%2C%20Sathyamoorthy%20Nagar%2C%20Chennai%2C%20Tamil%20Nadu%20600019&output=embed"></iframe>
+        <div class="map-card"><small>Make your way here</small><p>8A, Manali Express Road<br>Sathyamoorthy Nagar, Chennai</p><a href="https://www.google.com/maps/dir/?api=1&destination=8A%2C%20Manali%20Express%20Road%2C%20Sathyamoorthy%20Nagar%2C%20Chennai%2C%20Tamil%20Nadu%20600019" target="_blank" rel="noopener noreferrer">Get directions <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-main">
+        <div>
+          <a class="brand footer-brand" href="#home">
+            <span class="brand-mark" aria-hidden="true">M</span>
+            <span class="brand-copy"><strong>Madarasi Restaurant</strong><small>Chennai · Tamil Nadu</small></span>
+          </a>
+          <p class="footer-line">A place to gather, share a meal and make the evening your own.</p>
+          <p class="footer-line">8A, Manali Express Road, Sathyamoorthy Nagar,<br>Chennai, Tamil Nadu 600019</p>
+          <p class="footer-line"><a href="tel:+918056167697" style="color:var(--gold);text-decoration:none">+91 80561 67697</a> · Listed as closing at 12:00 AM</p>
+          <p class="footer-line"><a class="whatsapp-link" id="footerWhatsApp" href="#enquiry" target="_blank" rel="noopener noreferrer" style="color:var(--gold);text-decoration:none">WhatsApp enquiry ↗</a></p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation"><a href="#home">Home</a><a href="#story">Our Story</a><a href="#menu">Menu</a><a href="#visit">Contact</a><a href="https://www.google.com/maps/dir/?api=1&amp;destination=8A%2C%20Manali%20Express%20Road%2C%20Sathyamoorthy%20Nagar%2C%20Chennai%2C%20Tamil%20Nadu%20600019" target="_blank" rel="noopener noreferrer">Get directions ↗</a><a href="#enquiry">Enquire</a></nav>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year"></span> Madarasi Restaurant</span><span>Menu selection and supplied prices may change.</span></div>
+    </div>
+  </footer>
+
+  <a class="float-wa whatsapp-link" id="floatWhatsApp" href="#enquiry" target="_blank" rel="noopener noreferrer" aria-label="Message Madarasi Restaurant on WhatsApp">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 11.5a8.2 8.2 0 0 1-12.1 7.2L4 20l1.3-3.7A8.2 8.2 0 1 1 20 11.5Z" stroke="currentColor" stroke-width="1.7"/><path d="M9 8.7c.3-.5.6-.5.9-.5l.6.1.8 1.8c.1.3 0 .5-.2.7l-.5.6c.6 1.1 1.4 1.8 2.5 2.3l.6-.7c.2-.2.4-.3.7-.2l1.7.8c.3.1.4.4.3.7-.2.9-.9 1.6-1.9 1.6-2.4-.1-5.8-3.1-6.3-5.4-.2-.8.2-1.4.8-1.8Z" fill="currentColor"/></svg>
+    WhatsApp
+  </a>
+
+  <script>
+    const WHATSAPP_NUMBER = "918056167697";
+    const whatsappIsConfigured = /^\d{8,15}$/.test(WHATSAPP_NUMBER);
+    const whatsappUrl = message => `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    document.querySelectorAll(".whatsapp-link").forEach(link => {
+      if (whatsappIsConfigured) {
+        link.href = whatsappUrl(link.dataset.whatsappMessage || "Hello Madarasi Restaurant, I’d like to make an enquiry.");
+      } else {
+        link.removeAttribute("target");
+        link.setAttribute("aria-disabled", "true");
+        link.href = "#enquiry";
+      }
+    });
+    const menuCategories = ["Biryani", "Madarasi Special", "Combos", "Other menu items"];
+    const menuItems = [
+      { id: "biryani-chicken", name: "Chicken biryani", category: "Biryani", price: 120 },
+      { id: "biryani-chicken-65", name: "Chicken 65", category: "Biryani", price: 150 },
+      { id: "biryani-egg", name: "Egg biryani", category: "Biryani", price: 100 },
+      { id: "biryani-plain", name: "Plain biryani", category: "Biryani", price: 90 },
+      { id: "biryani-chicken-1kg", name: "Chicken 1kg", category: "Biryani", price: 180 },
+      { id: "biryani-prawn", name: "Prawn biryani", category: "Biryani", price: 180 },
+      { id: "biryani-fish", name: "Fish biryani", category: "Biryani", price: 180 },
+      { id: "nandu-lollypop", name: "Nandu Lollypop", category: "Madarasi Special", price: 100 },
+      { id: "fish-finger", name: "Fish Finger", category: "Madarasi Special", price: 230 },
+      { id: "chicken-uppukari", name: "Chicken Uppukari", category: "Madarasi Special", price: 160 },
+      { id: "chicken-chinthamani", name: "Chicken Chinthamani", category: "Madarasi Special", price: 180 },
+      { id: "honey-chicken-wings", name: "Honey Chicken Wings (3 pcs)", category: "Madarasi Special", price: 100 },
+      { id: "breadcrumbs-chicken", name: "Breadcrumbs Chicken", category: "Madarasi Special", price: 100 },
+      { id: "kaadai-65", name: "Kaadai 65", category: "Madarasi Special", price: 100 },
+      { id: "nethili-65", name: "Nethili 65", category: "Madarasi Special", price: 100 },
+      { id: "wings-65", name: "Wings 65 (6 pcs)", category: "Madarasi Special", price: 120 },
+      { id: "combo-1", name: "Combo I", category: "Combos", price: 100, detail: "Roti / naan (2) + chicken / paneer masala" },
+      { id: "combo-2", name: "Combo II", category: "Combos", price: 180, detail: "Chicken biryani + Chicken 65 (3 pcs)" },
+      { id: "combo-3", name: "Combo III", category: "Combos", price: 225, detail: "Chicken fried rice + Tandoori quarter" },
+      { id: "combo-4", name: "Combo IV", category: "Combos", price: 180, detail: "Shawarma + Grill quarter" },
+      { id: "chicken-pepper-masala", name: "Chicken pepper masala", category: "Other menu items", price: 160 },
+      { id: "paneer-masala", name: "Paneer masala", category: "Other menu items", price: 100 },
+      { id: "gobi-65", name: "Gobi 65", category: "Other menu items", price: 90 },
+      { id: "chicken-clear-soup", name: "Chicken clear soup", category: "Other menu items", price: 60 },
+      { id: "roti", name: "Roti", category: "Other menu items", price: 20 }
+    ];
+    const menuGrid = document.getElementById("menuGrid");
+    const filterButtons = [...document.querySelectorAll(".filter-btn")];
+    const formatPrice = price => `₹${price}`;
+    const menuCategory = document.getElementById("menuCategory");
+    const dishSelection = document.getElementById("dishSelection");
+    menuCategories.forEach(category => {
+      const option = document.createElement("option");
+      option.value = category;
+      option.textContent = category;
+      menuCategory.append(option);
+    });
+    function renderMenu(filter = "All") {
+      menuGrid.replaceChildren();
+      const categories = filter === "All" ? menuCategories : [filter];
+      const visibleCategories = categories.filter(category => menuItems.some(item => item.category === category));
+      if (!visibleCategories.length) {
+        const empty = document.createElement("div");
+        empty.className = "empty-state";
+        empty.textContent = "No menu items are listed for this category.";
+        menuGrid.append(empty);
+        return;
+      }
+      visibleCategories.forEach(category => {
+        const items = menuItems.filter(item => item.category === category);
+        const section = document.createElement("section");
+        section.className = "menu-category-block";
+        section.setAttribute("aria-label", category);
+
+        const heading = document.createElement("div");
+        heading.className = "menu-category-heading";
+        const title = document.createElement("h3");
+        title.textContent = category;
+        const count = document.createElement("span");
+        count.textContent = `${items.length} ${items.length === 1 ? "item" : "items"}`;
+        heading.append(title, count);
+
+        const list = document.createElement("ul");
+        list.className = "menu-list";
+        items.forEach(item => {
+          const row = document.createElement("li");
+          row.className = "menu-row";
+          const main = document.createElement("div");
+          main.className = "menu-row-main";
+          const name = document.createElement("h4");
+          name.textContent = item.name;
+          main.append(name);
+          if (item.detail) {
+            const detail = document.createElement("p");
+            detail.className = "menu-row-detail";
+            detail.textContent = item.detail;
+            main.append(detail);
+          }
+
+          const side = document.createElement("div");
+          side.className = "menu-row-side";
+          const price = document.createElement("span");
+          price.className = "menu-price";
+          price.textContent = formatPrice(item.price);
+          const ask = document.createElement("button");
+          ask.className = "menu-ask";
+          ask.type = "button";
+          ask.textContent = "Ask ↗";
+          ask.setAttribute("aria-label", `Enquire about ${item.name} on WhatsApp`);
+          ask.addEventListener("click", () => {
+            menuCategory.value = item.category;
+            updateDishOptions();
+            dishSelection.value = item.id;
+            enquiryType.value = "Menu question";
+            updateTableFields();
+            document.getElementById("formStatus").textContent = `${item.name} selected. Add your details to continue in WhatsApp.`;
+            document.getElementById("enquiry").scrollIntoView({ behavior: "smooth", block: "start" });
+            window.setTimeout(() => document.getElementById("guestName").focus({ preventScroll: true }), 350);
+          });
+          side.append(price, ask);
+          row.append(main, side);
+          list.append(row);
+        });
+
+        section.append(heading, list);
+        menuGrid.append(section);
+      });
+    }
+    renderMenu();
+    filterButtons.forEach(button => button.addEventListener("click", () => {
+      filterButtons.forEach(other => other.setAttribute("aria-pressed", String(other === button)));
+      renderMenu(button.dataset.filter);
+    }));
+
+    const menuToggle = document.getElementById("menuToggle");
+    const primaryNav = document.getElementById("primaryNav");
+    function closeNav() {
+      primaryNav.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation");
+      document.body.classList.remove("menu-open");
+    }
+    menuToggle.addEventListener("click", () => {
+      const opening = !primaryNav.classList.contains("open");
+      primaryNav.classList.toggle("open", opening);
+      menuToggle.setAttribute("aria-expanded", String(opening));
+      menuToggle.setAttribute("aria-label", opening ? "Close navigation" : "Open navigation");
+      document.body.classList.toggle("menu-open", opening);
+    });
+    primaryNav.querySelectorAll("a").forEach(link => link.addEventListener("click", closeNav));
+    window.addEventListener("resize", () => { if (window.innerWidth > 900) closeNav(); });
+
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") {
+        if (primaryNav.classList.contains("open")) { closeNav(); menuToggle.focus(); }
+      }
+    });
+
+    const enquiryType = document.getElementById("enquiryType");
+    const tableFields = document.getElementById("tableFields");
+    const preferredDate = document.getElementById("preferredDate");
+    const guestCount = document.getElementById("guestCount");
+    function updateDishOptions() {
+      const category = menuCategory.value;
+      dishSelection.replaceChildren();
+      const placeholder = document.createElement("option");
+      placeholder.value = "";
+      placeholder.textContent = category ? `Choose a ${category.toLowerCase()} dish` : "Choose a category first";
+      dishSelection.append(placeholder);
+      const matches = menuItems.filter(item => item.category === category);
+      if (!category) {
+        dishSelection.disabled = true;
+        return;
+      }
+      if (!matches.length) {
+        placeholder.textContent = `No supplied ${category.toLowerCase()} items`;
+        dishSelection.disabled = true;
+        return;
+      }
+      dishSelection.disabled = false;
+      matches.forEach(item => {
+        const option = document.createElement("option");
+        option.value = item.id;
+        option.textContent = item.name;
+        dishSelection.append(option);
+      });
+    }
+    updateDishOptions();
+    menuCategory.addEventListener("change", updateDishOptions);
+    function updateTableFields() {
+      const visible = enquiryType.value === "Table / group";
+      tableFields.querySelectorAll(".field").forEach(field => {
+        field.style.display = visible ? "grid" : "none";
+      });
+    }
+    enquiryType.addEventListener("change", updateTableFields);
+    updateTableFields();
+    const form = document.getElementById("enquiryForm");
+    const formStatus = document.getElementById("formStatus");
+    const submitButton = form.querySelector('[type="submit"]');
+    if (!whatsappIsConfigured) {
+      submitButton.disabled = true;
+      submitButton.setAttribute("aria-disabled", "true");
+      formStatus.textContent = "WhatsApp enquiries are unavailable until the restaurant number is configured.";
+    }
+    const errorMap = { guestName: "nameError", guestPhone: "phoneError", enquiryType: "typeError", guestCount: "guestError" };
+    function setError(field, message) {
+      field.setAttribute("aria-invalid", message ? "true" : "false");
+      const error = document.getElementById(errorMap[field.id]);
+      if (error) error.textContent = message;
+    }
+    function clearError(field) { setError(field, ""); }
+    Object.keys(errorMap).forEach(id => {
+      const field = document.getElementById(id);
+      field.addEventListener("input", () => clearError(field));
+      field.addEventListener("change", () => clearError(field));
+    });
+    form.addEventListener("submit", event => {
+      event.preventDefault();
+      formStatus.textContent = "";
+      if (!whatsappIsConfigured) {
+        formStatus.textContent = "WhatsApp enquiries are unavailable until the restaurant number is configured.";
+        return;
+      }
+      const name = document.getElementById("guestName");
+      const phone = document.getElementById("guestPhone");
+      let valid = true;
+      [name, phone, enquiryType, guestCount].forEach(field => clearError(field));
+      if (name.value.trim().length < 2) { setError(name, "Please enter your name (at least 2 characters)."); valid = false; }
+      const digits = phone.value.replace(/\D/g, "");
+      if (digits.length < 7 || digits.length > 15) { setError(phone, "Enter a phone number with 7–15 digits."); valid = false; }
+      if (!enquiryType.value) { setError(enquiryType, "Choose what you’d like to ask about."); valid = false; }
+      if (enquiryType.value === "Table / group" && guestCount.value && (Number(guestCount.value) < 1 || Number(guestCount.value) > 300)) {
+        setError(guestCount, "Enter a guest count from 1 to 300."); valid = false;
+      }
+      if (!valid) {
+        formStatus.textContent = "Please check the highlighted fields and try again.";
+        form.querySelector('[aria-invalid="true"]')?.focus();
+        return;
+      }
+      const lines = [
+        "Hello Madarasi Restaurant, I’d like to make an enquiry.",
+        `Name: ${name.value.trim()}`,
+        `Phone: ${phone.value.trim()}`,
+        `Enquiry: ${enquiryType.value}`,
+        menuCategory.value ? `Menu category: ${menuCategory.value}` : "",
+        dishSelection.value ? `Selected dish: ${menuItems.find(item => item.id === dishSelection.value)?.name || ""}` : "",
+        enquiryType.value === "Table / group" && preferredDate.value ? `Preferred date: ${preferredDate.value}` : "",
+        enquiryType.value === "Table / group" && guestCount.value ? `Guests: ${guestCount.value}` : "",
+        document.getElementById("guestMessage").value.trim() ? `Message: ${document.getElementById("guestMessage").value.trim()}` : ""
+      ].filter(Boolean);
+      const url = whatsappUrl(lines.join("\n"));
+      formStatus.textContent = "Opening WhatsApp with your enquiry ready to send.";
+      window.open(url, "_blank", "noopener,noreferrer");
+    });
+
+    const revealEls = document.querySelectorAll(".reveal");
+    if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      revealEls.forEach(el => observer.observe(el));
+    } else revealEls.forEach(el => el.classList.add("visible"));
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
